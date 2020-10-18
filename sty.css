@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css2?family=Jura:wght@700&display=swap');
+
+body{
+    background: rgb(63,94,251);
+background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);
+margin: 0 auto;
+}
+h1 {
+    
+    font-size: 35px;
+    color: white;
+    /* background: rgb(63,67,251);
+    background: radial-gradient(circle, rgba(63,67,251,1) 0%, rgba(137,194,100,1) 100%); */
+    text-align: center;
+    border-radius: 5px;
+    position: relative;
+    padding: 10px 30px;
+    font-family: 'Jura', sans-serif;
+    
+}
+.logo {
+    font-family: 'Merienda One', cursive;
+    color: #a1d5ff;
+}
+h1#search2{
+    margin-bottom: 80px;
+    
+}
+
+
+#container {
+    background-color: rgba(255, 255, 255, 0);
+    display: block;
+    /* padding:10px 10px; */
+    /* border-radius: 106px; */
+    margin-top: 25vh;
+    z-index: -100;
+    
+    
+}
+
+ul{
+   
+    text-align: center;
+    padding-right: 42px;
+    border-radius: 10px;
+    margin-top: 45px;
+}
+
+li{
+    text-decoration: none;
+    list-style: none;
+    display: inline-flexbox;
+    background-color: cornsilk;
+    padding: 10px 25px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    font-family: 'Merienda One', cursive;
+    
+}
+
+li2{
+  text-decoration: none;
+  list-style: none;
+  display: inline-flexbox;
+  background-color: cornsilk;
+  padding: 60px 55px;
+  margin-bottom: 15px;
+  border-radius: 10px;
+  font-family: 'Merienda One', cursive;
+  
+}
+
+
+
+/* #myProgress {
+    
+    background-color: grey;
+    margin-right: 15px;
+    margin-left: 15px;
+    border-radius: 6px;
+    border-top-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+  }
+  
+  #myBar {
+    width: 10%;
+    height: 30px;
+    background-color: rgb(61, 153, 0);
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+  } */
+  
+
+
+  .main {
+    width: 350px;
+    height: 350px;
+    position: absolute;
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    overflow: hidden;
+    z-index: -1;
+    transform: translate(-50%, -50%);
+    box-shadow: 0px 0px 105px 35px #c1f357; 
+   background: repeating-radial-gradient(#313142, #313142 10%, #313142 11%,#313142 12%);background: rgb(63,67,251);
+   background: radial-gradient(circle, rgba(63,67,251,1) 0%, rgba(137,194,100,1) 100%);
+  }
+  
+  
+  
+  .cross {
+    width: 100%;
+    height: 0;
+    box-shadow: 0px 0px 50px 3px #2b0544; 
+    position: relative;
+    top: 50%;
+  }
+  
+  .cross2 {
+    transform: rotate(45deg)  
+  }
+  
+  .cross3 {
+    transform: rotate(-45deg)  
+  }
+  
+  .cross4 {
+    transform: rotate(90deg)  
+  }
+  
+  
+  .dots {
+    height: 2px;
+    width: 2px;
+    border-radius: 50%;
+    position: relative;
+    background-color: #313142;
+    box-shadow: 0px 0px 2px 1px #313142;  
+  }
+  
+  .dot1 {
+    box-shadow: 0px 0px 2px 3px #7d7;  
+    animation: fly1 4s linear infinite alternate;
+  }
+  
+  .dot2 {
+    box-shadow: 0px 0px 2px 1px #7d7;  
+    animation: fly2 6s linear infinite alternate;
+  }
+  
+  .dot3 {
+    box-shadow: 0px 0px 2px 1px #3ebe02;  
+    animation: fly3 7s linear infinite;
+  }
+  
+  .dot3 > div {
+    height: 1px;
+    width: 1px;
+    border-radius: 150%;
+    box-shadow: 0px 0px 2px 1px #0da9e7;  
+    animation: attacker .4s linear infinite;
+  }
+  
+  .dot4 {
+    box-shadow: 0px 0px 2px 1px #fdf915;  
+    animation: fly4 4s linear infinite alternate;
+  }
+  
+  .dot5 {
+    box-shadow: 0px 0px 2px 5px #313142;  
+    animation: fly5 8s linear infinite alternate;
+  }
+  
+  .swinger {
+    width: 50%;
+    height: 50%;
+    position: relative;
+    background: linear-gradient(290deg, #313142 0%,rgba(129, 33, 167, 0.459) 80%);
+    top: 0%;
+    left: 50%;
+    transform-origin: 0% 100%;
+    animation: swing 4s infinite linear;
+  }
+  .line {
+    position: relative;
+    top: 100%;
+    width: 100%;
+    height: 0;
+    box-shadow: 0px 0px 10px 1px #484853;
+  }
+  
+  @keyframes swing {
+      0% {transform: rotate(0deg) skew(-30deg,-30deg);}
+      100% {transform: rotate(360deg) skew(-30deg,-30deg);}
+  }
+  
+  @keyframes fly1 {
+    0% {left: 100%; top: 100%;} 
+    30% {left: 90%; top: 40%;}
+    41% {left: 80%; top: 30%;}
+    100% {left: -30%; top: 20%;}
+  }
+  
+  @keyframes fly2 {
+    0% {left: 10%; top: 0%;} 
+    100% {left: 90%; top: 120%;}
+  }
+  
+  
+  @keyframes fly3 {
+    0% {left: 150%; top: -400%; } 
+    100% {left: 20%; top: 120%;}
+  }
+  
+  @keyframes fly4 {
+    0% {left: -20%; top: 70%; } 
+    100% {left: 120%; top: 20%;}
+  }
+  
+  
+  @keyframes fly5 {
+    0% {left: -120%; top: 20%; } 
+    100% {left: 130%; top: 20%;}
+  }
+  
+  @keyframes attacker {
+    0% {box-shadow: 0px 0px 2px 1px rgb(34, 68, 221); } 
+    100% {box-shadow: 0px 0px 2px 5px rgb(233, 86, 1);}
+  }
